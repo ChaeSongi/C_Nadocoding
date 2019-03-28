@@ -46,15 +46,26 @@ int main(void)
 	}*/
 
 	// 구구단(면접 볼 떄 이거 물어봤는데 ㅠㅠ)
-	for (int i = 2; i <= 9; i++)
+	/*for (int i = 2; i <= 9; i++)
 	{
 		printf("%d단 계산\n", i);
 		for (int j = 1; j <= 9; j++)
 		{
 			printf("%d x %d = %d\n", i, j, i*j);
 		}
-	}
+	}*/
 
+	//*
+	 
+	for (int i = 0; i < 6; i++)
+	{
+		printf("%d", i);
+		for (int j = 0; j <= i; j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
 	return 0;
 	
 }
