@@ -45,7 +45,7 @@ int main(void)
 		}
 	}*/
 
-	// 구구단(면접 볼 떄 이거 물어봤는데 ㅠㅠ)
+	// 구구단(면접 볼 때 이거 물어봄)
 	/*for (int i = 2; i <= 9; i++)
 	{
 		printf("%d단 계산\n", i);
@@ -56,11 +56,43 @@ int main(void)
 	}*/
 
 	//*
-	 
+	/*
 	for (int i = 0; i < 6; i++)
 	{
 		printf("%d", i);
 		for (int j = 0; j <= i; j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}*/
+
+	//* 별 거꾸로
+	/*for (int i = 0; i < 7; i++)
+	{
+			for (int j = i; j < 7 - 1; j++)
+			{
+				printf("S");
+		     }
+			for (int k = 0; k <= i; k++)
+			{
+				printf("*");
+			}
+			printf("\n");
+	}*/
+
+	//피라미드 쌓아라 - 프로젝트
+
+	int floor;
+	printf("몇 층으로 쌓겠는가?");
+	scanf_s("%d", &floor);
+	for (int i = 0; i < floor; i++)
+	{
+		for (int j = i; j < floor - 1; j++)
+		{
+			printf(" ");
+		}
+		for (int k = 0; k <i*2+1 ; k++)
 		{
 			printf("*");
 		}
